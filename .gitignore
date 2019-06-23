@@ -1,0 +1,13 @@
+_site/*
+
+node_modules
+
+_timidity/*
+!_timidity/.gitkeep
+_lilypond/*
+!_lilypond/.gitkeep
+_lilycode/*
+!_lilycode/.gitkeep
+audio/*
+!audio/.gitkeep
+
