@@ -11,6 +11,10 @@ const minifyHtml = (content) => htmlmin.minify(content, {
 });
 
 // The Lilypond extension
+/**
+ * @param {Object} nunjucksEngine the context for the plugin
+ * @return {String} the rendered html string
+ */
 function lilypondExtension(nunjucksEngine) {
   return new function() {
     this.tags = ['lilypond'];

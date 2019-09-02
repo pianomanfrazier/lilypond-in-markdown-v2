@@ -10,8 +10,11 @@ const minifyHtml = (content) => htmlmin.minify(content, {
   collapseWhitespace: true,
 });
 
-// The LilyPond Syntax highlight extension
-// pass source code to python-ly for syntax highlighting
+/**
+ * highlights a code block using python-ly
+ * @param {Object} nunjucksEngine the context of the plugin
+ * @return {String} the output html
+ */
 function lilycodeExtension(nunjucksEngine) {
   return new function() {
     this.tags = ['lilycode'];
