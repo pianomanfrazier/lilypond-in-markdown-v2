@@ -3,7 +3,7 @@ _site/*
 node_modules
 
 _timidity/*
-!_timidity/.gitkeep
+!_timidity/*.cfg
 _lilypond/*
 !_lilypond/.gitkeep
 _lilycode/*
